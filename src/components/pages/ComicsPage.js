@@ -1,6 +1,6 @@
-import ComicsList from "../comicsList/ComicsList.js";
-import AppBanner from "../appBanner/AppBanner.js";
-import ErrorBoundary from "../errorBoundary/ErrorBoundary.js";
+import ComicsList from "../comicsList/ComicsList";
+import AppBanner from "../appBanner/AppBanner";
+import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 
 
 const ComicsPage = () => {

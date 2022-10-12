@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/Spinner';
@@ -9,9 +9,8 @@ import './comicsList.scss';
 const ComicsList = () => {
     
     const [comicsList, setComicsList] = useState([]);
-    const [newItemLoading, setnewItemLoading] = useState(false);
+    const [newItemLoading, setNewItemLoading] = useState(false);
     const [offset, setOffset] = useState(0);
-    // const [comicsEnded, setComicsEnded] = useState(false);
 
     const {loading, error, getAllComics} = useMarvelService();
 
@@ -20,7 +19,7 @@ const ComicsList = () => {
     }, [])
 
     const onRequest = (offset, initial) => {
-        initial ? setnewItemLoading(false) : setnewItemLoading(true);
+        initial ? setNewItemLoading(false) : setNewItemLoading(true);
         getAllComics(offset)
             .then(onComicsListLoaded)
     }
@@ -31,7 +30,7 @@ const ComicsList = () => {
             ended = true;
         }
         setComicsList([...comicsList, ...newComics]);
-        setnewItemLoading(false);
+        setNewItemLoading(false);
         setOffset(offset + 8);
         // setComicsEnded(ended);
     }

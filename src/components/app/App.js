@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import AppHeader from "../appHeader/AppHeader.js";
-import {MainPage, ComicsPage, NotFound, SingleComicPage} from '../pages/index.js'
+import AppHeader from "../appHeader/AppHeader";
+import { MainPage, ComicsPage, NotFound, SingleComicPage } from '../pages/index'
 
 
 const App = () => {

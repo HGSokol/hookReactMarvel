@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import MarvelError from '../error/MarvelError.js'
+import MarvelError from '../error/MarvelError'
 
 class ErrorBoundary extends Component {
     state = {

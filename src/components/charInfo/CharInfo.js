@@ -1,9 +1,9 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'
 
 import useMarvelService from '../../services/MarvelService';
-import Spinner from '../spinner/Spinner.js';
-import MarvelError from '../error/MarvelError.js';
+import Spinner from '../spinner/Spinner';
+import MarvelError from '../error/MarvelError';
 import Skeleton from '../skeleton/Skeleton'
 
 import './charInfo.scss';
@@ -44,7 +44,7 @@ const CharInfo = (props) =>{
 }
 
 const View = (props) => {
-    // console.log(props.char)
+
     const {name, img, homepage, wiki, description, comics} = props.char;
 
     const comicsV = (comic) => {

@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-import useMarvelService from '../../services/MarvelService.js';
-import Spinner from '../spinner/Spinner.js';
-import MarvelError from '../error/MarvelError.js';
+import useMarvelService from '../../services/MarvelService';
+import Spinner from '../spinner/Spinner';
+import MarvelError from '../error/MarvelError';
 
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
@@ -36,7 +36,6 @@ const RandomChar = (props) => {
     
     return (
         <div className="randomchar">
-            {/* условный рендеринг */ }
             {errorMes}
             {load}
             {content}

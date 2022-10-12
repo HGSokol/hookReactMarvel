@@ -1,9 +1,9 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import useMarvelService from '../../services/MarvelService';
-import Spinner from '../spinner/Spinner.js';
-import MarvelError from '../error/MarvelError.js';
+import Spinner from '../spinner/Spinner';
+import MarvelError from '../error/MarvelError';
 
 import './SingleComicPage.scss';
 
